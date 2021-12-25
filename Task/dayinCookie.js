@@ -47,11 +47,11 @@ const QK=0
 
 //填写你要导入的ck名字，去boxjs里看或者ck获取处 如$.setdata(refreshtokenVal, "refreshtoken" + $.idx);   则在''中填写refreshtoken
 
-const JSA='flwurl'
-const JSB='flwheader'
-const JSC='flwspbody'
-const JSD='flwqwbody'
-const JSE='flwydbody'
+const JSA='jrttjsbHeader'
+const JSB=''
+const JSC=''
+const JSD=''
+const JSE=''
 const JSF=''
 const JSG=''
 const JSH=''
@@ -62,10 +62,10 @@ const JSL=''
 
 //填写 想要导入的ck数据，多账号换行 如token=abc   则在``中填写token=abc
 const JSAVal=`flwurl`
-const JSBVal=`flwheader`
-const JSCVal=`flwspbody`
-const JSDVal=`flwqwbody`
-const JSEVal=`flwydbody`
+const JSBVal=``
+const JSCVal=``
+const JSDVal=``
+const JSEVal=``
 const JSFVal=``
 const JSGVal=``
 const JSHVal=``
