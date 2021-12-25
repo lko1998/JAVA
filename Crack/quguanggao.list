@@ -1,0 +1,116 @@
+// ==UserScript==
+// @ScriptName        QX自用分流
+// @Author            @ddgksf2013
+// @RelatedGitHub     https://github.com/ddgksf2013/Cuttlefish
+// @WechatID          公众号墨鱼手记
+// @TgChannel         https://t.me/ddgksf2021
+// @UpdateTime        20211225
+// @Attention         如果广告仍然存在，请卸载应用重新安装
+// @Function          去广告配置（自用，混合policy、proxy、reject不建议使用）
+// @Suitable          自行观看 “# > ”
+// @ScriptURL         https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Filter/MyAdRule.list
+// ==/UserScript==
+
+
+# > 🤏 POLICY PART-----------------------------------------------------------------------
+# > Bahamut for TW
+USER-AGENT,Anime*,Bahamut
+DOMAIN-SUFFIX,bahamut.com.tw,Bahamut
+DOMAIN-SUFFIX,gamer.com.tw,Bahamut
+DOMAIN,gamer-cds.cdn.hinet.net,Bahamut
+DOMAIN,gamer2-cds.cdn.hinet.net,Bahamut
+# > Manhuaren（必须台湾节点，否则无法搜索屏蔽漫画）
+DOMAIN-KEYWORD,manhuaren,Bahamut
+# > Spotify for TW
+USER-AGENT,Spotify*,Bahamut
+DOMAIN-SUFFIX,pscdn.co,Bahamut
+DOMAIN-SUFFIX,scdn.co,Bahamut
+DOMAIN-SUFFIX,spotify.com,Bahamut
+DOMAIN-SUFFIX,spoti.fi,Bahamut
+
+
+# > google  search for me
+DOMAIN-KEYWORD,google,Youtube
+
+# > ✌ REJECT PART-----------------------------------------------------------------------
+# > 12306
+HOST, ad.12306.cn, REJECT
+
+# > manhua
+HOST, cloudmobi-creative-center.s3.ap-southeast-1.amazonaws.com, REJECT
+HOST, s.openmediation.com, REJECT
+HOST, api.applovefrom.com, REJECT
+HOST, api16-access-sg.pangle.io, REJECT
+
+# > 暂时屏蔽P36
+HOST, p36-buy.itunes.apple.com, REJECT
+HOST, api-access.pangolin-sdk-toutiao.com, REJECT
+HOST, 91adv.com.cn, REJECT
+HOST, adui.tg.meitu.com, REJECT
+HOST, sensorsdata.cmcc-cs.cn, REJECT
+HOST, lupic.cdn.bcebos.com, REJECT
+HOST, moment-app-team.s3.amazonaws.com, REJECT
+HOST, pgapi.ksmobile.com, REJECT
+HOST, pangolin.snssdk.com, REJECT
+HOST, iconfactory.com, REJECT
+HOST, ocsp.apple.com, REJECT
+HOST, img.offeryeah.online, REJECT
+HOST, img.cdn.famobi.com, REJECT
+HOST, static.alookbrowser.com, REJECT
+HOST, app-measurement.com, REJECT
+HOST, log.ihuman.com, REJECT
+HOST, dc.114dev.com, REJECT
+
+# > 🤟 PROXY PART------------------------------------------------------------------------
+# > SUFFIX 01
+HOST-SUFFIX, epicgames.com, PROXY
+HOST-SUFFIX, manhuacat.com, PROXY
+HOST-SUFFIX, cdn77.org, PROXY
+HOST-SUFFIX, lvv2.com, PROXY
+HOST-SUFFIX, cdnmanhua.net, PROXY
+HOST-SUFFIX, graph.org, PROXY
+HOST-SUFFIX, pximg.net, PROXY
+HOST-SUFFIX, mangafunc.fun, PROXY
+HOST-SUFFIX, wzdhm.cc, PROXY
+# > KEYWORD 02
+HOST-KEYWORD, discord, PROXY
+HOST-KEYWORD, portal, PROXY
+HOST-KEYWORD, chinadigitaltimes, PROXY
+HOST-KEYWORD, wiki, PROXY
+HOST-KEYWORD, widgy, PROXY
+HOST-KEYWORD, v2ex, PROXY
+# > HOST 03
+HOST, msiv.tv, PROXY
+HOST, archive.md, PROXY
+HOST, www.2animx.com, PROXY
+HOST, m.mudvod.tv, PROXY
+HOST, merlinblog.xyz, PROXY
+HOST, duboku.cc, PROXY
+HOST, isekai.im, PROXY
+HOST, lookup-api.apple.com.edgekey.net,PROXY
+HOST, e16991.b.akamaiedge.net,PROXY
+HOST, go123.live, PROXY
+HOST, api.faceplay.cc, PROXY
+HOST, aico-api.aiglobalniu.com, PROXY
+HOST, const.im, PROXY
+HOST, odysee.com, PROXY
+HOST, graph.org, PROXY
+HOST, deviceshots.com, PROXY
+HOST, www.ikanwzd.top, PROXY
+HOST, api.snapkit.com, PROXY
+HOST, lofi.cafe, PROXY
+HOST, us-central1-slidebox-ios-prod.cloudfunctions.net, PROXY
+HOST, jdsharedresourcescdn.azureedge.net, PROXY
+HOST, api.lolicon.app, PROXY
+HOST, i.pixiv.cat, PROXY
+HOST, www.copymanga.com, PROXY
+HOST, www.v2ex.com, PROXY
+HOST, ift.tt, PROXY
+HOST, greasyfork.org, PROXY
+HOST, ehgt.org, PROXY
+HOST, e-hentai.org, PROXY
+HOST, lvv2.com, PROXY
+HOST, www.ondemandchina.com, PROXY
+HOST, api.reface.video, PROXY
+HOST, stackoverflow.com, PROXY
+HOST, www.codecademy.com, PROXY
