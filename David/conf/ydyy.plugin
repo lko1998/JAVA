@@ -1,0 +1,13 @@
+// 移动电影院脚本，请低调使用 ！！！
+// TG群：https://t.me/china20211029  
+// TG群里不定期发放薅毛脚本
+// boxjs地址：https://cdn.jsdelivr.net/gh/bluesmallpig/scripts/David.boxjs.json
+
+[MITM]
+hostname = api.smartcinema.com.cn
+
+[Script]
+http-request ^https://api.smartcinema.com.cn/.+ script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/ydyy.js, tag=移动电影院CK获取
+
+# Loon 定时任务配置
+cron "3 6-22/2 * * *" script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/ydyy.js, enabled=true, tag=移动电影院

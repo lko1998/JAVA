@@ -1,0 +1,19 @@
+#!name=书旗日常任务
+#!desc=日常任务数据抓取
+
+[Script]
+书旗小说签到 = type=http-request,pattern=https://ocean.shuqireader.com/api/activity/xapi/signin/v5/signInAction,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js,script-update-interval=0
+书旗小说福利中心任务 = type=http-request,pattern=https://ocean.shuqireader.com/api/activity/v1/task/reward,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js,script-update-interval=0
+书旗小说福利中心气泡 = type=http-request,pattern=https://ocean.shuqireader.com/api/prizecenter/xapi/prize/manual/receive,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js,script-update-interval=0
+书旗小说视频 = type=http-request,pattern=https://api-access.pangolin-sdk-toutiao.com/api/ad/union/sdk/reward_video/reward/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js,script-update-interval=0
+书旗小说极速版30阅读(转移到每日任务) = type=http-request,pattern=https://ocean.shuqireader.com/api/activity/v1/activity/pendant/lottery?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js,script-update-interval=0
+书旗小说极速版视频(转移到每日任务) = type=http-request,pattern=https://ocean.shuqireader.com/api/ad/v1/api/prize/lottery,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js,script-update-interval=0
+书旗小说30阅读奖励(转移到每日任务) = type=http-request,pattern=https://ocean.shuqireader.com/api/actstage/pendant/lottery/action,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js,script-update-interval=0
+书旗小说视频转转转抽奖数据 = type=http-request,pattern=https://ocean.shuqireader.com/api/activity/activity/v1/lottery/draw?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js,script-update-interval=0
+书旗小说视频转转转信息 = type=http-request,pattern=https://ocean.shuqireader.com/api/activity/activity/v1/lottery/info?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js,script-update-interval=0
+书旗小说激励视频信息信息 = type=http-request,pattern=https://ocean.shuqireader.com/api/ad/adserver/v1/api/getAdInfo?,max-size=0,script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js,script-update-interval=0
+书旗小说阅读上传数据(转移到每日任务) = type=http-request,pattern=https://ocean.shuqireader.com/api/jcollection/collection/iosapi/reading/upload,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js,script-update-interval=0
+书旗小说阅读进度 = type=http-request,pattern=https://ocean.shuqireader.com/api/activity/v1/activity/boxTask?,max-size=0,script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js,script-update-interval=0
+
+[MITM]
+hostname = %APPEND% render.shuqireader.com,ocean.shuqireader.com,api-access.pangolin-sdk-toutiao.com

@@ -1,0 +1,12 @@
+#!name=书旗每日任务
+#!desc=每日阅读挑战赛和极速版视频，定时推送到v2p
+
+[Script]
+elecv2p推送 = type=cron,cronexp=15 6-22 * * *,timeout=360,script-path=https://raw.githubusercontent.com/CenBoMin/GithubSync/main/ELECV2PJS/PushBoxjsCookie_elecV2p.js,script-update-interval=0
+书旗小说极速版福利中心浏览书城 = type=http-request,pattern=https://ocean.shuqireader.com/api/activity/v1/task/reward,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/everyday.js,script-update-interval=0
+书旗小说上传阅读时间 = type=http-request,pattern=https://ocean.shuqireader.com/api/jcollection/collection/iosapi/reading/upload,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/everyday.js,script-update-interval=0
+书旗小说阅读30秒 = type=http-request,pattern=https://ocean.shuqireader.com/api/actstage/pendant/lottery/action,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/everyday.js,script-update-interval=0
+书旗小说极速版视频 = type=http-request,pattern=https://ocean.shuqireader.com/api/ad/v1/api/prize/lottery,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/everyday.js,script-update-interval=0
+
+[MITM]
+hostname = %APPEND% ocean.shuqireader.com

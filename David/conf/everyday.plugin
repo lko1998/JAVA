@@ -1,0 +1,8 @@
+[MITM]
+hostname = ocean.shuqireader.com
+
+[Script]
+http-request https://ocean.shuqireader.com/api/ad/v1/api/prize/lottery script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/everyday.js , requires-body=1, tag=极速版视频
+http-request https://ocean.shuqireader.com/api/actstage/pendant/lottery/action script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/everyday.js , requires-body=1, tag=书旗小说阅读30秒
+http-request https://ocean.shuqireader.com/api/jcollection/collection/iosapi/reading/upload script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/everyday.js , requires-body=1, tag=书旗小说上传阅读时长
+http-request https://ocean.shuqireader.com/api/activity/v1/task/reward script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/everyday.js , requires-body=1, tag=书旗小说极速版福利中心浏览书城

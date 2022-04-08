@@ -1,0 +1,9 @@
+#!name=移动电影院
+#!desc=移动电影院任务订阅 请低调使用
+
+[Script]
+移动电影院 = type=cron,cronexp=19 6-22/2 * * *,timeout=3600,script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/ydyy.js,script-update-interval=0
+移动电影院CK获取 = type=http-request,pattern=^https://api.smartcinema.com.cn/.+,max-size=0,script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/ydyy.js,script-update-interval=0
+
+[MITM]
+hostname = %APPEND% api.smartcinema.com.cn

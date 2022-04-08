@@ -1,0 +1,22 @@
+// 趣红包短视频脚本，请低调使用！！！
+// by David
+// 商店搜索趣红包短视频，下载安装。
+// TG群：https://t.me/china20211029  
+// TG群里不定期发放薅毛脚本
+// boxjs地址：https://cdn.jsdelivr.net/gh/bluesmallpig/scripts/David.boxjs.json
+
+[MITM]
+hostname = api2.guaniuvideo.com
+
+[Script]
+#杀掉后台,重启APP
+http-request guaniuvideo.com/sy.+ig script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/qhbdspapp.js, tag=趣红包基础
+#看视频一圈
+http-request guaniuvideo.com/r.+d/v.+ script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/qhbdspapp.js, requires-body=1, tag=趣红包视频
+#评论一条视频
+http-request guaniuvideo.com/c.+/.+it script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/qhbdspapp.js, requires-body=1, tag=趣红包评论
+#提现一次
+http-request guaniuvideo.com/w.+/.+y script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/qhbdspapp.js, requires-body=1, tag=趣红包提现
+
+# Loon 定时任务配置
+cron "*/30 * * * *" script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/qhbdspapp.js, enabled=true, tag=趣红包短视频

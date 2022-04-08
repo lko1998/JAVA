@@ -1,0 +1,22 @@
+{
+  "name": "IOS中青看点重写订阅",
+  "author": "elecV2p",
+  "mitmhost": ["*.youth.cn","kandian.wkandian.com"],
+  "rewrite": [
+    {
+      "match": "v5/article/info",
+      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/zqkd.js",
+      "enable": true
+    },
+    {
+      "match": "Nameless/getTaskBrowse",
+      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/zqkd.js",
+      "enable": true
+    },
+    {
+      "match": "NewTaskIos/getTaskList",
+      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/zqkd.js",
+      "enable": true
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+#!name=趣红包短视频
+#!desc=趣红包脚本重写 请低调使用
+
+[Script]
+趣红包短视频 = type=cron,cronexp=*/30 * * * *,timeout=3600,script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/qhbdspapp.js,script-update-interval=0
+趣红包基础 = type=http-request,pattern=guaniuvideo.com/sy.+ig,max-size=0,script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/qhbdspapp.js,script-update-interval=0
+趣红包视频 = type=http-request,pattern=guaniuvideo.com/r.+d/v.+,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/qhbdspapp.js,script-update-interval=0
+趣红包评论 = type=http-request,pattern=guaniuvideo.com/c.+/.+it,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/qhbdspapp.js,script-update-interval=0
+趣红包提现 = type=http-request,pattern=guaniuvideo.com/w.+/.+y,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/bluesmallpig/scripts/main/qhbdspapp.js,script-update-interval=0
+
+[MITM]
+hostname = %APPEND% api2.guaniuvideo.com
