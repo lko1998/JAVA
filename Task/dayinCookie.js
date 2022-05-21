@@ -47,7 +47,7 @@ const QK=0
 
 //填写你要导入的ck名字，去boxjs里看或者ck获取处 如$.setdata(refreshtokenVal, "refreshtoken" + $.idx);   则在''中填写refreshtoken
 
-const JSA='jrttjsbHeader'
+const JSA='zssqCookie'
 const JSB=''
 const JSC=''
 const JSD=''
